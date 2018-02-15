@@ -20,14 +20,22 @@
 {% for article in articles_page.object_list %}
 <article>
   {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+    <div class="ribbonBox">
+    {% if article.cat %}
+      {% for cat in article.cat.split(' ') %}
+        <div class="corner-ribbon {{cat}} shadow">{{cat}}</div>
+      {% endfor %}
+    {% endif %}
     {% if article.thumb %}
     <a href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">
       <img src="{{ SITEURL }}/{{ article.thumb }}" width="100%"/>
-    </a><br/>
+    </a>
+    <br/>
     {% endif %}
     <div class="summaryBlock">
       <h2><a href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ article.title }}</a></h2>
       {{ article.summary }}
+    </div>
     </div>
   {% else %}
     <header>
