@@ -12,6 +12,7 @@
 
 {% block content %}
 <article class="single">
+  <div class="articleContent">
   <header>
     {% if not ARTICLE_HIDE_TRANSLATION %}
       {% import 'partial/translations.html' as translations with context %}
@@ -86,5 +87,6 @@
   {% endif %}
 
   {% include "partial/disqus.html" %}
+  </div>
 </article>
 {% endblock %}
