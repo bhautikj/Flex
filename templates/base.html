@@ -110,6 +110,12 @@
           <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
 
+          {% if TAGROLL %}
+            {% for name, link in TAGROLL %}
+            <li><a href="{{ SITEURL }}/{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+          {% endif %}
+
           {% for name, link in LINKS %}
           <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
           {% endfor %}
