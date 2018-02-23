@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .ribbonBox{
   display:block;
   position:relative;
@@ -29,16 +31,19 @@
 
 .corner-ribbon.art {
   background: #e43;
+  background-color:#e43;
   border-color: #e43 transparent transparent transparent;
 }
 
 .corner-ribbon.science {
   background: #2c7;
+  background-color: #2c7;
   border-color: #2c7 transparent transparent transparent;
 }
 
 .corner-ribbon.engineering {
   background: #39d;
+  background-color: #39d;
   border-color: #39d transparent transparent transparent;
 }
 
@@ -49,13 +54,13 @@ div.corner-ribbon:nth-child(1) {
 
 div.corner-ribbon:nth-child(1)::after {
   position: absolute;
-  height: 20px;
   left: 100px;
   content: "";
-  width: 40px;
-  border-style: solid;
-  border-width: 20px 20px 0 0;
-  border-color: inherit; 
+  background-color: inherit;
+  height: 20px;
+  width: 60px;
+  -moz-border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
 }
 
 div.corner-ribbon:nth-child(2) {
@@ -64,13 +69,13 @@ div.corner-ribbon:nth-child(2) {
 
 div.corner-ribbon:nth-child(2)::after {
   position: absolute;
-  height: 20px;
   left: 100px;
   content: "";
-  width: 20px;
-  border-style: solid;
-  border-width: 20px 20px 0 0;
-  border-color: inherit; 
+  background-color: inherit;
+  height: 20px;
+  width: 40px;
+  -moz-border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
 }
 
 div.corner-ribbon:nth-child(3) {
@@ -79,14 +84,13 @@ div.corner-ribbon:nth-child(3) {
 
 div.corner-ribbon:nth-child(3)::after {
   position: absolute;
-  height: 20px;
   left: 100px;
   content: "";
-  width: 00px;
-  border-style: solid;
-  border-width: 20px 20px 0 0;
-  border-color: inherit; 
-
+  background-color: inherit;
+  height: 20px;
+  width: 20px;
+  -moz-border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
 }
 
 
