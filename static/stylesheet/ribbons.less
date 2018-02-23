@@ -10,7 +10,7 @@
   height: 20px;
   background: #e43;
   position: absolute;
-  top: 5px;
+  top: 0px;
   left: -5px;
 
   padding-left: 6px;
@@ -30,26 +30,26 @@
 /* Topics */
 
 .corner-ribbon.art {
-  background: #e43;
-  background-color:#e43;
-  border-color: #e43 transparent transparent transparent;
+  background: @art;
+  background-color: @art;
+  color: @engineering;
 }
 
 .corner-ribbon.science {
-  background: #2c7;
-  background-color: #2c7;
-  border-color: #2c7 transparent transparent transparent;
+  background: @science;
+  background-color: @science;
+  color: @light-grey;
 }
 
 .corner-ribbon.engineering {
-  background: #39d;
-  background-color: #39d;
-  border-color: #39d transparent transparent transparent;
+  background: @engineering;
+  background-color: @engineering;
+  color: @art;
 }
 
 
 div.corner-ribbon:nth-child(1) {
-  top: 5px;
+  top: 0px;
 }
 
 div.corner-ribbon:nth-child(1)::after {
@@ -64,7 +64,7 @@ div.corner-ribbon:nth-child(1)::after {
 }
 
 div.corner-ribbon:nth-child(2) {
-  top: 25px;
+  top: 20px;
 }
 
 div.corner-ribbon:nth-child(2)::after {
@@ -79,7 +79,7 @@ div.corner-ribbon:nth-child(2)::after {
 }
 
 div.corner-ribbon:nth-child(3) {
-  top: 45px;
+  top: 40px;
 }
 
 div.corner-ribbon:nth-child(3)::after {
