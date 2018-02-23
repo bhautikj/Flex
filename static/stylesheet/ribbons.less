@@ -29,24 +29,45 @@
 
 /* Topics */
 
-.corner-ribbon.art {
+.art {
   background: @art;
-  background-color: @art;
   color: @engineering;
+  background-color: @art;
 }
 
-.corner-ribbon.science {
+.science {
   background: @science;
   background-color: @science;
   color: @light-grey;
 }
 
-.corner-ribbon.engineering {
+.engineering {
   background: @engineering;
   background-color: @engineering;
   color: @art;
 }
 
+.ribbon-capsule {
+  height: 50px;
+  padding: 0px 25px 0px 25px;
+  margin: 5px;
+  -moz-border-radius:25px 25px 25px 25px;  // rounds corners for firefox
+  border-radius:25px 25px 25px 25px;  //rounds corners for other browsers
+  display: inline-flex;
+  align-items: center;
+}
+
+.ribbon-capsule-default {
+  height: 50px;
+  padding: 0px 25px 0px 25px;
+  margin: 2px;
+  -moz-border-radius:25px 25px 25px 25px;  // rounds corners for firefox
+  border-radius:25px 25px 25px 25px;  //rounds corners for other browsers
+  display: inline-flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 3px;
+}
 
 div.corner-ribbon:nth-child(1) {
   top: 0px;
