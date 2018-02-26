@@ -4,6 +4,7 @@
 
 {% block content %}
 <article class="single">
+  <div class="articleContent">
   <header>
     {% import 'partial/translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
@@ -13,6 +14,7 @@
     {% block before_content %}{% endblock %}
     {% block page_content %}{{ page.content }}{% endblock %}
     {% block after_content %}{% endblock %}
+  </div>
   </div>
 </article>
 {% endblock %}

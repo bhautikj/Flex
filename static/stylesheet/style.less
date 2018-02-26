@@ -62,7 +62,13 @@ body {
 
 a {
   color: @link-color;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a {
+  img {
+    text-decoration: none;
+  }
 }
 
 a:hover {
@@ -414,7 +420,7 @@ div.related-posts {
   }
 }
 
-ul.list, ul.social, ul.related-posts {
+ul.list, ul.social, ul.related-posts, ul.blag {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -428,6 +434,29 @@ ul.list {
   }
 }
 
+ul.blag {
+  font-size: 1.6em;
+  padding-top: 20px;
+
+  li {
+    display: inline;
+  }
+
+  img {
+    width: 30px;
+  }
+
+  a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: .8em;
+    line-height: 36px;
+  }
+}
+
 ul.social {
   font-size: 1.6em;
   padding-top: 20px;
@@ -435,6 +464,7 @@ ul.social {
   li {
     display: inline;
   }
+
 
   a:hover {
     z-index: 2;

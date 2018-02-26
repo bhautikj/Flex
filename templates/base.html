@@ -130,6 +130,13 @@
         <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
         {% endfor %}
       </ul>
+      
+      <ul class="blag">
+        {% for name, link, imgfile in BLAGS %}
+        <li><a href="{{ link }}" target="_blank"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/{{ imgfile }}" alt="{{ name }}"></a></li>
+        {% endfor %}
+      </ul>
+
     </div>
 
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
